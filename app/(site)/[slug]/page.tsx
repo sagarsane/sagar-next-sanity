@@ -10,7 +10,7 @@ export default async function Page( { params }: Props ) {
 
      return (
         <div>
-            <h1 className="bg-gradient-to-r from-orange-400 to-purple-600 bg-clip-text text-transparent 
+            <h1 className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent 
             text-5xl font-extrabold drop-shadow">{page.title}</h1>
         
 
