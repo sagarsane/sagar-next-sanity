@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import '../globals.css'
 import { getPages } from '@/sanity/sanity-utils'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
   title: 'My Personal Projects!',
@@ -17,6 +18,7 @@ export default async function RootLayout({
   const pages = await getPages();
   return (
     <html lang="en">
+      <Analytics />
       <body className='max-w-3xl mx-auto py-10'>
         <header className='flex items-center justify-between'>
           <Link href="/" className='bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent
